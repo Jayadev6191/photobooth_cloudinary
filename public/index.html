@@ -11,26 +11,41 @@
     src="https://code.jquery.com/jquery-3.2.1.min.js"
     integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
     crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/vue"></script>
 </head>
 <body>
-    <div class="photobooth-nav"></div>
+  <nav class="navbar navbar-default">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="#">WebSiteName</a>
+      </div>
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="#">Home</a></li>
+        <li><a href="#">Page 1</a></li>
+        <li><a href="#">Page 2</a></li>
+        <li><a href="#">Page 3</a></li>
+      </ul>
+    </div>
+  </nav>
+    </div>
     <div class="row">
+        <div class="col-md-1 photobooth-view"></div>
         <div class="col-md-9 photobooth-view">
+          <div class="row">
             <form enctype="multipart/form-data" id="image_search">
                 <input type="text" id="public_id">
                 <input type="submit" value="Submit">
             </form>
+          </div>
+          <div class="row">
             <div class="photobooth-picture">
-                    <form method="post" enctype="multipart/form-data" action="/upload">
-                        <input type="file" name="file">
-                        <input type="submit" value="Submit">
-                    </form>
-                    <div class="photo"></div>
+                  <div id="photo"></div>
             </div>
+          </div>
         </div>
-        <div class="col-md-3 photobooth-panel">
+        <!-- <div class="col-md-3 photobooth-panel">
             options
-        </div>
+        </div> -->
     </div>
 
     <script src="js/index.js"></script>
