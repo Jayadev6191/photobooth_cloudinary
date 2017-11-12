@@ -1,0 +1,141 @@
+{
+   "data": {
+      "isActive": "filter",
+      "list": [
+         {
+            "name": "Filter",
+            "value": "filter",
+            "icon1": "assets/images/filter-white.png",
+            "icon2": "assets/images/filter-blue.png",
+            "options": [
+               {
+                  "name": "AL Dente",
+                  "value": "al_dente",
+                  "type": "filter",
+                  "filter": "e_art",
+                  "strength": 100
+               },
+               {
+                  "name": "Athena",
+                  "value": "athena",
+                  "type": "filter",
+                  "filter": "e_art",
+                  "strength": 100
+               },
+               {
+                  "name": "Audrey",
+                  "value": "audrey",
+                  "type": "filter",
+                  "filter": "e_art",
+                  "strength": 100
+               },
+               {
+                  "name": "Aurora",
+                  "value": "aurora",
+                  "type": "filter",
+                  "filter": "e_art",
+                  "strength": 100
+               },
+               {
+                  "name": "Red Rock",
+                  "value": "red_rock",
+                  "type": "filter",
+                  "filter": "e_art",
+                  "strength": 100
+               }
+            ]
+         },
+         {
+            "name": "Enhance",
+            "value": "enhance",
+            "icon1": "assets/images/enhance-white.png",
+            "icon2": "assets/images/enhance-blue.png",
+            "options": [
+               {
+                  "name": "Improve",
+                  "value": "improve",
+                  "type": "enhancement"
+               },
+               {
+                  "name": "Contrast",
+                  "value": "contrast",
+                  "type": "enhancement"
+               },
+               {
+                  "name": "Color",
+                  "value": "color",
+                  "type": "enhancement"
+               },
+               {
+                  "name": "Catoonify",
+                  "value": "cartoonify",
+                  "type": "enhancement"
+               },
+               {
+                  "name": "Blur Faces",
+                  "value": "blur-faces",
+                  "type": "enhancement"
+               }
+            ]
+         },
+         {
+            "name": "Props",
+            "value": "props",
+            "icon1": "assets/images/props-white.png",
+            "icon2": "assets/images/props-blue.png",
+            "type": "props",
+            "options": [
+               {
+                  "name": "Winter hat",
+                  "type": "props",
+                  "value": "winter-hat",
+                  "icon": "assets/images/props-menu/winter-hat-selected.png",
+                  "fun_prop": "fun-winter-hat_wlhznk"
+               },
+               {
+                  "name": "Pipe",
+                  "type": "props",
+                  "value": "pipe",
+                  "icon": "assets/images/props-menu/props-blue.png",
+                  "fun_prop": "fun-pipe_yfapfc"
+               },
+               {
+                  "name": "Mustache",
+                  "type": "props",
+                  "value": "mustache",
+                  "icon": "assets/images/props-blue.png",
+                  "fun_prop": "fun-moustache_dzu1n2"
+               },
+               {
+                  "name": "Glasses",
+                  "type": "props",
+                  "value": "glases",
+                  "icon": "assets/images/props-blue.png",
+                  "fun_prop": "fun-glasses_gzvasw"
+               },
+               {
+                  "name": "Mask",
+                  "value": "mask",
+                  "type": "props",
+                  "icon": "assets/images/props-blue.png",
+                  "fun_prop": "fun-mask_ma3x4z"
+               }
+            ]
+         },
+         {
+            "name": "Resize",
+            "value": "resize",
+            "type": "resize",
+            "icon1": "assets/images/resize-white.png",
+            "icon2": "assets/images/resize-blue.png"
+         },
+         {
+            "name": "Publish",
+            "value": "publish",
+            "type": "publish",
+            "icon1": "assets/images/publish-white.png",
+            "icon2": "assets/images/publish-blue.png"
+         }
+      ]
+   }
+}
