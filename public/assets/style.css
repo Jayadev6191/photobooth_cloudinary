@@ -1,9 +1,20 @@
-.photobooth-nav {
-    background-color: #103058;
-    height:50px;
+.navbar {
+    background-color: #0E2F5A !important;
+    /*height:50px;*/
     box-shadow: 0px 1px #041224;
     z-index: 10;
 }
+
+.navbar-brand {
+  pointer-events: none;
+  text-decoration: none;
+  color:#ffffff;
+  font-size: 10px;
+  position: relative;
+  top: 20px;
+  z-index:10;
+}
+
 
 .photobooth-panel {
     background-color: #103058;
@@ -17,15 +28,20 @@
 }
 
 .photobooth-picture {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
     height:auto;
+    flex: 1;
 }
 
 #image_search{
-  padding: 20px 0px;
+  width: 100%;
+  /*padding: 20px 0px;*/
 }
 
 #photo {
-  max-width: 80%;
+  max-width: 100%;
   max-height: 50%;
 }
 
@@ -33,4 +49,69 @@
 img {
     max-width: 100%;
     max-height: 100%;
+}
+
+
+#app-placeholder {
+  background-color: #0F3159;
+}
+
+#action-placeholder .action {
+    width: 99px;
+    height: 143px;
+    background-color: #eff0f1;
+    margin: 5px solid #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: 2px 0px solid #ffffff;
+    cursor: pointer;
+}
+
+#action-placeholder .action .image-placeholder {
+
+}
+
+#action-placeholder .action .action-name-placeholder {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 20px;
+}
+
+#action-placeholder .action.active {
+  background-color: #0C2541 !important;
+  color:#ffffff;
+}
+
+#picture-placeholder {
+  width: 100%;
+}
+
+#picture-placeholder .categories {
+  display: flex;
+  background-color: #0C2541 !important;
+  /*border: 2px 0px solid #ffffff;*/
+}
+
+#picture-placeholder .categories .category {
+  width: 122px;
+  height: 100px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  font-family: 'Lato', sans-serif;
+  /*opacity: 0.03;*/
+}
+
+#picture-placeholder .category.active, #picture-placeholder .category:hover {
+  /*opacity: 28%;*/
+  /* Add gray overlay - talk to designer*/
+  background-color: #132B46 !important;
+}
+
+#picture-placeholder .category-name {
+  color: #ffffff;
 }
