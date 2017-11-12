@@ -1,4 +1,6 @@
 $("document").ready(function(){
+
+    $("#image_search").submit(function(e){
         let payload = {};
         payload.public_id = $("#public_id").val();
 
@@ -17,4 +19,7 @@ $("document").ready(function(){
                 alert("could not find image");
             }
         });
+
+        e.preventDefault();
+    });
 });
