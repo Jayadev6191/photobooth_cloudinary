@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/style.css" />
+    <title>Photobooth App</title>
+    <script
+    src="https://code.jquery.com/jquery-3.2.1.min.js"
+    integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+    crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="photobooth-nav"></div>
+    <div class="row">
+        <div class="col-md-9 photobooth-view">
+            <form enctype="multipart/form-data" id="image_search">
+                <input type="text" id="public_id">
+                <input type="submit" value="Submit">
+            </form>
+            <div class="photobooth-picture">
+                    <form method="post" enctype="multipart/form-data" action="/upload">
+                        <input type="file" name="file">
+                        <input type="submit" value="Submit">
+                    </form>
+                    <div class="photo"></div>
+            </div>
+        </div>
+        <div class="col-md-3 photobooth-panel">
+            options
+        </div>
+    </div>
+
+    <script src="js/index.js"></script>
+</body>
+</html>
