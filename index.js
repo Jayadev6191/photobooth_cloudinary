@@ -34,12 +34,25 @@ app.post('/getImage', (req, res) => {
   }).then(function(resources){
     return getMatchingResource(public_id, resources)
   }).then(function(matched){
-    console.log('matched',matched.url);
-    res.send(matched.url);
+    console.log('matched',matched);
+    if(matched.length > 0) {
+        console.log(matched[0]);
+        res.send(matched[0].url);
+    }else{
+        res.status(500).send({status:500, message: "could not find image", type:'internal'});
+    }
+    // res.send(matched.url);
   }).catch(function(err){
-    console.log(err);
+    console.error(err);
+    res.status(500).send({status:500, message: err, type:'internal'});
   });
+});
 
+app.post('/addFilter', (req, res) => {
+  console.log(req.body.type);
+  console.log(req.body.value);
+
+  
 });
 
 app.listen(app.get('port'),function() {
