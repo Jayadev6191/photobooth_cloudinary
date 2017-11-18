@@ -126,7 +126,7 @@
             "name": "Resize",
             "value": "resize",
             "type": "resize",
-            "icon1": "assets/images/resize-white.png",
+            "icon1": "assets/images/resize-blue.png",
             "icon2": "assets/images/resize-blue.png"
          },
          {

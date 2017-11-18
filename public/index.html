@@ -8,10 +8,6 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
     <link rel="stylesheet" href="assets/style.css" />
     <title>Photobooth App</title>
-    <script
-    src="https://code.jquery.com/jquery-3.2.1.min.js"
-    integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
-    crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.17.1/axios.min.js"></script>
     <script src="https://unpkg.com/vue"></script>
@@ -25,14 +21,14 @@
       </div>
     </div>
   </nav>
-  <div class="container">
+  <div class="container" id="app">
     <div class="row">
         <div class="col-md-1 photobooth-view"></div>
         <div class="col-md-9 photobooth-view">
           <div class="row">
-            <form enctype="multipart/form-data" id="image_search" autocomplete="off">
+            <form enctype="multipart/form-data" id="image_search" autocomplete="off" v-on:submit.prevent="onsubmit">
               <div class="form-group">
-                <input type="text" class="form-control" id="public_id" placeholder="Search by public id" value="david-beckham">
+                <input type="text" class="form-control" placeholder="Search by public id" v-model.trim="publicId" />
               </div>
             </form>
           </div>
@@ -57,14 +53,15 @@
                       </div>
                     </div>
                   </div>
-                  <div id="photo"></div>
+                  <div id="photo" v-if="loadedImageUrl!==null">
+                    <img :src="loadedImageUrl" alt="loadedImage" />
+                  </div>
                 </div>
             </div>
           </div>
         </div>
     </div>
   </div>
-  <script src="js/index.js"></script>
   <script src="js/components/actions.js"></script>
 </body>
 </html>
